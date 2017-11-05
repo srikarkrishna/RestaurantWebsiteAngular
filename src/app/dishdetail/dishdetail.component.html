@@ -1,0 +1,69 @@
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px" 
+    fxLayoutGap.xs="0">
+
+  <div fxFlex="40">
+    <md-card><md-card-header><md-card-title>
+    <h2>{{dish.name | uppercase}} </h2>
+    </md-card-title>
+    </md-card-header>
+    <img md-card-image src = {{dish.image}} alt={{dish.name}}>
+    <md-card-content> <p>{{dish.description}} </p> </md-card-content>
+    <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+    </md-card-actions>
+    </md-card>
+  </div>
+
+  <div fxFlex="40">
+   <md-card><md-card-header><md-card-title>
+    <h2>Comments </h2>
+    </md-card-title>
+    </md-card-header>
+    <md-card-content>
+   <md-list fxFlex>
+    <md-list-item class="comment"> 
+    {{dish.comments[0].comment}}
+    <br/>
+    {{dish.comments[0].rating}} stars
+    <br/>
+    -- &nbsp; {{dish.comments[0].author}} &nbsp; {{dish.comments[0].date | date}}
+    </md-list-item>
+    <md-list-item class="comment"> 
+    {{dish.comments[1].comment}}
+    <br/>
+    {{dish.comments[1].rating}} stars
+    <br/>
+    -- &nbsp; {{dish.comments[1].author}} &nbsp; {{dish.comments[1].date | date}}
+    </md-list-item>
+    <md-list-item class="comment"> 
+    {{dish.comments[2].comment}}
+    <br/>
+    {{dish.comments[2].rating}} stars
+    <br/>
+    -- &nbsp; {{dish.comments[2].author}} &nbsp; {{dish.comments[2].date | date}}
+    </md-list-item>
+    <md-list-item class="comment"> 
+    {{dish.comments[3].comment}}
+    <br/>
+    {{dish.comments[3].rating}} stars
+    <br/>
+    -- &nbsp; {{dish.comments[3].author}} &nbsp; {{dish.comments[3].date | date}}
+    </md-list-item>
+    <md-list-item class="comment"> 
+    {{dish.comments[4].comment}}
+    <br/>
+    {{dish.comments[4].rating}} stars
+    <br/>
+    -- &nbsp; {{dish.comments[4].author}} &nbsp; {{dish.comments[4].date | date}}
+    </md-list-item>   </md-list>
+   </md-card-content>
+   </md-card>
+  </div>
+
+</div>

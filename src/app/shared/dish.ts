@@ -2,7 +2,7 @@ export class Dish{
 	name : string;
 	image : string;
 	category : string;
-	lable : string;
+	label : string;
 	price : string;
 	description : string;
 }
