@@ -7,7 +7,7 @@
     fxLayoutGap.xs="0">
 
   <div fxFlex="40">
-    <md-card><md-card-header><md-card-title>
+    <md-card *ngIf="dish"><md-card-header><md-card-title>
     <h2>{{dish.name | uppercase}} </h2>
     </md-card-title>
     </md-card-header>
